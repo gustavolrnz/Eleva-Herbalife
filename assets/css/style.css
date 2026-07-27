@@ -14,8 +14,14 @@ html, body {
   line-height: 0;
 }
 
-.site-section img {
+.site-section img,
+.site-section video {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.site-section video {
+  aspect-ratio: 45 / 32;
+  object-fit: cover;
 }
