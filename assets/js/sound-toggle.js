@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!video.muted) {
       video.play();
     }
-    toggle.textContent = video.muted ? '🔇 Ativar som' : '🔊 Silenciar';
+    toggle.textContent = video.muted ? '🔇' : '🔊';
+    toggle.setAttribute('aria-label', video.muted ? 'Ativar som do vídeo' : 'Silenciar vídeo');
   });
 });

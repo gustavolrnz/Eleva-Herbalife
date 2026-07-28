@@ -30,22 +30,31 @@ html, body {
   position: relative;
 }
 
-.sound-toggle {
+.video-controls {
   position: absolute;
-  right: 24px;
-  bottom: 24px;
+  left: 14px;
+  bottom: 14px;
+  display: flex;
+  gap: 8px;
   line-height: normal;
-  padding: 10px 18px;
-  border: none;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.55);
-  color: #fff;
-  font-size: 15px;
-  font-family: sans-serif;
-  cursor: pointer;
-  backdrop-filter: blur(2px);
 }
 
-.sound-toggle:hover {
-  background: rgba(0, 0, 0, 0.7);
+.video-controls__btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background 0.15s ease;
+}
+
+.video-controls__btn:hover {
+  background: rgba(0, 0, 0, 0.65);
 }
