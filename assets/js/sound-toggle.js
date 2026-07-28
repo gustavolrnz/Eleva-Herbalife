@@ -1,14 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   const video = document.getElementById('hero2-video');
   const toggle = document.getElementById('hero2-sound-toggle');
-  if (!video || !toggle) return;
+  const label = toggle ? toggle.querySelector('.mic-toggle__label') : null;
+  if (!video || !toggle || !label) return;
 
   toggle.addEventListener('click', () => {
     video.muted = !video.muted;
     if (!video.muted) {
       video.play();
     }
-    toggle.textContent = video.muted ? '🔇' : '🔊';
+    toggle.classList.toggle('is-unmuted', !video.muted);
+    label.textContent = video.muted ? 'Ativar som' : 'Silenciar';
     toggle.setAttribute('aria-label', video.muted ? 'Ativar som do vídeo' : 'Silenciar vídeo');
   });
 });
