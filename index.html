@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eleva | Vida Saudável</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/sound-toggle.js" defer></script>
 </head>
 <body>
 
@@ -14,10 +15,13 @@
     </video>
   </section>
 
-  <section class="site-section">
-    <video autoplay loop muted playsinline>
+  <section class="site-section site-section--audio">
+    <video autoplay loop muted playsinline id="hero2-video">
       <source src="assets/videos/hero-2-mulher-bg.mp4" type="video/mp4" />
     </video>
+    <button type="button" class="sound-toggle" id="hero2-sound-toggle" aria-label="Ativar som do vídeo">
+      🔇 Ativar som
+    </button>
   </section>
 
   <section id="sobre" class="site-section">
