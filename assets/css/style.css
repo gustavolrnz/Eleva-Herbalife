@@ -10,20 +10,30 @@ html, body {
 }
 
 .site-section {
-  position: relative;
   width: 100%;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
+  line-height: 0;
 }
 
 .site-section img,
 .site-section video {
-  position: absolute;
-  inset: 0;
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+}
+
+.site-section video {
+  aspect-ratio: 45 / 32;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .site-section video {
+    aspect-ratio: 187 / 350;
+  }
+}
+
+.site-section--audio {
+  position: relative;
 }
 
 .video-controls {
