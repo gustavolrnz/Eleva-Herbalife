@@ -216,6 +216,48 @@ html, body {
 
 /* Contato no rodapé (faixa verde) */
 
+.footer-info {
+  position: absolute;
+  left: 10%;
+  top: 76%;
+  right: 42%;
+  bottom: 6%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #fff;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.15s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-copy {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+}
+
 .footer-contact {
   position: absolute;
   left: 61%;
@@ -264,6 +306,7 @@ html, body {
   .site-nav,
   .cta-cluster,
   .map-embed,
+  .footer-info,
   .footer-contact,
   .whatsapp-float {
     display: none;
