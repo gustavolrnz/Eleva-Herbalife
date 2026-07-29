@@ -6,5 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     duration: 1.1,
     smoothWheel: true,
     syncTouch: true,
+    anchors: true,
   });
 });

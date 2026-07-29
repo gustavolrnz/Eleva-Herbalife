@@ -10,6 +10,7 @@ html, body {
 }
 
 .site-section {
+  position: relative;
   width: 100%;
   line-height: 0;
 }
@@ -84,4 +85,172 @@ html, body {
   font-size: 11px;
   font-family: sans-serif;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar */
+
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 28px 24px;
+  line-height: normal;
+}
+
+.site-nav a {
+  color: #fff;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55);
+  transition: opacity 0.15s ease;
+}
+
+.site-nav a:hover {
+  opacity: 0.75;
+}
+
+/* CTA buttons */
+
+.cta-cluster {
+  position: absolute;
+  display: flex;
+  line-height: normal;
+  z-index: 20;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cta-btn--primary {
+  background: #1f8c3b;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.cta-btn--primary:hover {
+  background: #197530;
+}
+
+.cta-btn--secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: 1.5px solid #fff;
+  backdrop-filter: blur(2px);
+}
+
+.cta-btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.cta-cluster--hero2 {
+  left: 52%;
+  top: 63%;
+  right: 3%;
+  bottom: 6%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cta-cluster--produtos {
+  right: 6%;
+  bottom: 8%;
+}
+
+.cta-cluster--clube {
+  left: 23%;
+  top: 76%;
+  right: 27%;
+  bottom: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-cluster--clube .cta-btn {
+  width: 100%;
+}
+
+.cta-cluster--ultima {
+  left: 8%;
+  top: 29%;
+  right: 57%;
+  bottom: 56%;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-cluster--ultima .cta-btn {
+  width: 100%;
+}
+
+/* Mapa funcional */
+
+.map-embed {
+  position: absolute;
+  left: 53%;
+  top: 28%;
+  width: 40%;
+  height: 41%;
+  border: none;
+  z-index: 10;
+}
+
+/* Contato no rodapé (faixa verde) */
+
+.footer-contact {
+  position: absolute;
+  left: 61%;
+  top: 76%;
+  right: 6%;
+  bottom: 6%;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.footer-contact svg {
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
+  transition: opacity 0.15s ease;
+}
+
+.footer-contact a:hover svg {
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .site-nav,
+  .cta-cluster,
+  .map-embed,
+  .footer-contact {
+    display: none;
+  }
 }
