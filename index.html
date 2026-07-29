@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eleva | Vida Saudável</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/responsive-video.js" defer></script>
   <script src="assets/js/sound-toggle.js" defer></script>
 </head>
 <body>
 
   <section id="inicio" class="site-section">
-    <video autoplay loop muted playsinline>
+    <video class="responsive-video" autoplay loop muted playsinline
+      data-desktop="assets/videos/hero-1-monitor-bg.mp4"
+      data-mobile="assets/videos/hero-1-monitor-bg-mobile.mp4">
       <source src="assets/videos/hero-1-monitor-bg.mp4" type="video/mp4" />
     </video>
   </section>
 
   <section class="site-section site-section--audio">
-    <video autoplay loop muted playsinline id="hero2-video">
+    <video class="responsive-video" autoplay loop muted playsinline id="hero2-video"
+      data-desktop="assets/videos/hero-2-mulher-bg.mp4"
+      data-mobile="assets/videos/hero-2-mulher-bg-mobile.mp4">
       <source src="assets/videos/hero-2-mulher-bg.mp4" type="video/mp4" />
     </video>
     <div class="video-controls">
@@ -35,25 +40,33 @@
   </section>
 
   <section id="sobre" class="site-section">
-    <video autoplay loop muted playsinline>
+    <video class="responsive-video" autoplay loop muted playsinline
+      data-desktop="assets/videos/sobre-eleva-bg.mp4"
+      data-mobile="assets/videos/sobre-eleva-bg-mobile.mp4">
       <source src="assets/videos/sobre-eleva-bg.mp4" type="video/mp4" />
     </video>
   </section>
 
   <section id="produtos" class="site-section">
-    <video autoplay loop muted playsinline>
+    <video class="responsive-video" autoplay loop muted playsinline
+      data-desktop="assets/videos/produtos-bg.mp4"
+      data-mobile="assets/videos/produtos-bg-mobile.mp4">
       <source src="assets/videos/produtos-bg.mp4" type="video/mp4" />
     </video>
   </section>
 
   <section id="clube" class="site-section">
-    <video autoplay loop muted playsinline>
+    <video class="responsive-video" autoplay loop muted playsinline
+      data-desktop="assets/videos/clube-eleva-bg.mp4"
+      data-mobile="assets/videos/clube-eleva-bg-mobile.mp4">
       <source src="assets/videos/clube-eleva-bg.mp4" type="video/mp4" />
     </video>
   </section>
 
   <footer id="contato" class="site-section">
-    <video autoplay loop muted playsinline>
+    <video class="responsive-video" autoplay loop muted playsinline
+      data-desktop="assets/videos/footer-bg.mp4"
+      data-mobile="assets/videos/footer-bg-mobile.mp4">
       <source src="assets/videos/footer-bg.mp4" type="video/mp4" />
     </video>
   </footer>

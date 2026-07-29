@@ -26,6 +26,12 @@ html, body {
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .site-section video {
+    aspect-ratio: 187 / 350;
+  }
+}
+
 .site-section--audio {
   position: relative;
 }
