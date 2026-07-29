@@ -132,12 +132,13 @@ html, body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 14px 26px;
-  border-radius: 999px;
+  padding: 24px 32px;
+  border-radius: 8px;
   font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.3px;
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 1.25;
+  letter-spacing: 0.2px;
   text-decoration: none;
   cursor: pointer;
   transition: transform 0.15s ease, background 0.15s ease;
@@ -150,7 +151,7 @@ html, body {
 .cta-btn--primary {
   background: #1f8c3b;
   color: #fff;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
 }
 
 .cta-btn--primary:hover {
@@ -158,14 +159,13 @@ html, body {
 }
 
 .cta-btn--secondary {
-  background: rgba(255, 255, 255, 0.15);
+  background: #1b3b2c;
   color: #fff;
-  border: 1.5px solid #fff;
-  backdrop-filter: blur(2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
 }
 
 .cta-btn--secondary:hover {
-  background: rgba(255, 255, 255, 0.28);
+  background: #14301f;
 }
 
 .cta-cluster--hero2 {
@@ -174,14 +174,9 @@ html, body {
   right: 3%;
   bottom: 6%;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
-  gap: 16px;
-}
-
-.cta-cluster--produtos {
-  right: 6%;
-  bottom: 8%;
+  gap: 18px;
 }
 
 .cta-cluster--clube {
@@ -234,7 +229,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 28px;
 }
 
 .footer-contact svg {
@@ -246,11 +241,34 @@ html, body {
   opacity: 0.75;
 }
 
+/* Botão flutuante de WhatsApp */
+
+.whatsapp-float {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25d366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  z-index: 200;
+  transition: transform 0.15s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
 @media (max-width: 768px) {
   .site-nav,
   .cta-cluster,
   .map-embed,
-  .footer-contact {
+  .footer-contact,
+  .whatsapp-float {
     display: none;
   }
 }
